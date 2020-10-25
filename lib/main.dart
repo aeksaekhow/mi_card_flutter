@@ -11,31 +11,78 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           backgroundColor: Colors.teal,
           body: SafeArea(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Column(
               children: [
-                Container(
-                  color: Colors.red,
-                  width: 100,
+                CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage('images/aeksaekhow.jpg'),
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      color: Colors.yellow,
-                      width: 100,
-                      height: 100,
-                    ),
-                    Container(
-                      color: Colors.green,
-                      width: 100,
-                      height: 100,
-                    ),
-                  ],
+                Text(
+                  'Aek Sae-khow',
+                  style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Pacifico',
+                  ),
+                ),
+                Text(
+                  'FULLSTACK DEVELOPER',
+                  style: TextStyle(
+                    fontFamily: 'SourceSansPro',
+                    color: Colors.teal[100],
+                    fontSize: 20,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Container(
-                  color: Colors.blue,
-                  width: 100,
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        '+66 99 000 1111',
+                        style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.mail,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        'saekhow.aek@gmail.com',
+                        style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
