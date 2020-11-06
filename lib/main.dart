@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.teal,
           body: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
                   radius: 50,
@@ -36,52 +37,63 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        '+66 99 000 1111',
-                        style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20,
-                        ),
-                      ),
-                    ],
+                SizedBox(
+                  height: 20,
+                  width: 150,
+                  child: Divider(
+                    color: Colors.teal.shade100,
                   ),
                 ),
-                Container(
+                Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.mail,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'saekhow.aek@gmail.com',
-                        style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20,
+                  child: Padding(
+                    padding: EdgeInsets.all(25),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.phone,
+                          color: Colors.teal,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          '+66 99 000 1111',
+                          style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontFamily: 'SourceSansPro',
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.mail,
+                          color: Colors.teal,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'saekhow.aek@gmail.com',
+                          style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontFamily: 'SourceSansPro',
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
